@@ -1,10 +1,9 @@
 require 'faker'
-
+require_relative '../app/models/task'
 
 for x in 0..3
   todo = Faker::Lorem.sentence
-  description = "false"
-
-  Task.create(todo: todo, description: description)
+  status = "false"
+  Task.create(todo: todo, status: status)
 end
 
